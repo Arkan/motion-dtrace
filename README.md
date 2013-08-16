@@ -10,6 +10,11 @@ Installation
 gem install motion-dtrace
 ```
 
+You also need to install gnu-grep since grep used on mac is no more compatible !
+```
+brew install grep
+```
+
 Usage
 -----
 
@@ -52,7 +57,7 @@ When you terminate the app, you get a trace similar to following:
 Extra
 -----
 
-You may specify your own dtrace file via: 
+You may specify your own dtrace file via:
 ```
 rake dtrace DTRACE=/Users/siuying/Documents/workspace/motion/motion-dtrace/dtrace/methods_duration.d
 ```
@@ -61,7 +66,7 @@ rake dtrace DTRACE=/Users/siuying/Documents/workspace/motion/motion-dtrace/dtrac
 TODO
 ----
 
-Currently this gem is just a hack to simplify command lines. 
+Currently this gem is just a hack to simplify command lines.
 
 We shall investigate can we do real integration with project.
 
